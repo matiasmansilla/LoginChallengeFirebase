@@ -27,5 +27,10 @@ class LoginPresenter: LoginPresenterProtocol {
     func loginFacebookFailed(with title: String?, error message: String?) {
         router?.presentError(from: view, with: title, message: message)
     }
+    
+    func cancelLogin() {
+        router?.dismissLogin(from: view)
+    }
+    
 }
 

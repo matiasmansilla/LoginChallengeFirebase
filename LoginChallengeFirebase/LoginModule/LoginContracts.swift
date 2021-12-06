@@ -16,6 +16,7 @@ protocol LoginPresenterProtocol: AnyObject {
     func loginWithFacebook()
     func loginFacebookFailed(with title: String?, error message: String?)
     func goToRegister()
+    func cancelLogin()
 }
 
 //MARK: View -
@@ -40,4 +41,5 @@ protocol LoginRouterProtocol: AnyObject {
     func goToLogin()
     func goToRegister(from context: AnyObject?)
     func presentError(from context: AnyObject?, with title: String?, message: String?)
+    func dismissLogin(from context: AnyObject?)
 }

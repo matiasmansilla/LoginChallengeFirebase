@@ -92,6 +92,7 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
         user.name = nameTextField.text
         user.lastname = lastNameTextField.text
         user.age = Int(ageTextField.text ?? "")
+        user.birthday = dateTextField.text
         showLoadingOverlay()
         presenter?.save(user: user)
     }

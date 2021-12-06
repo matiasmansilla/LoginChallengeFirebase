@@ -34,12 +34,11 @@ class LoginInteractor: LoginInteractorProtocol {
                         self?.presenter?.loginFacebookFailed(with: "Error", error: error?.localizedDescription)
                     }
                 }
-                
             case .cancelled:
+                self?.presenter?.cancelLogin()
                 break
-            case .failed(_):
-                //Handle error
-            print("error")
+            case .failed(let error):
+                self?.presenter?.loginFacebookFailed(with: "Error", error: error.localizedDescription)
             @unknown default:
                 break
             }

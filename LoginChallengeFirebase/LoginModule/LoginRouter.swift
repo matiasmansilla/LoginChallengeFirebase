@@ -45,5 +45,9 @@ class LoginRouter: LoginRouterProtocol {
         }
     }
     
+    func dismissLogin(from context: AnyObject?) {
+        guard let context = context as? UIViewController else { return }
+        context.hideLoadingOverlay()
+    }
     
 }
