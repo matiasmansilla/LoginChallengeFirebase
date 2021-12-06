@@ -15,5 +15,17 @@ class RegisterPresenter: RegisterPresenterProtocol {
     var interactor: RegisterInteractorProtocol?
     var router: RegisterRouterProtocol?
     
+    //MARK: - Methods
+    func save(user: User) {
+        interactor?.saveInDB(user: user)
+    }
+    
+    func setError(title: String?, message: String?) {
+        router?.presentError(from: view, with: title, message: message)
+    }
+    
+    func goToHome() {
+        router?.goToHome(from: view)
+    }
 }
 

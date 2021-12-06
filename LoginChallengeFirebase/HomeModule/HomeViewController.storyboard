@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="22X-hX-zY5">
                                 <rect key="frame" x="40" y="84" width="334" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkF-IU-KgQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Successful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkF-IU-KgQ">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="86.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -31,9 +31,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgi-WZ-Jwm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgi-WZ-Jwm" customClass="CustomPrimaryButton" customModule="LoginChallengeFirebase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="250" width="334" height="50"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="mfa-9R-pps"/>
                                         </constraints>
@@ -58,12 +57,21 @@
                             <constraint firstItem="22X-hX-zY5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="qNo-Sj-0Fv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="dOe-BP-aZx" id="wIj-S4-qCy"/>
+                        <outlet property="userLoggedLabel" destination="kkF-IU-KgQ" id="EVS-to-MwY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="119"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Zgi-WZ-Jwm">
+            <size key="intrinsicContentSize" width="60" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

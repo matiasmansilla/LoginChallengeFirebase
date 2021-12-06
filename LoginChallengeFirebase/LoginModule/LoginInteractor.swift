@@ -27,6 +27,7 @@ class LoginInteractor: LoginInteractorProtocol {
                 let credential = FacebookAuthProvider.credential(withAccessToken: token?.tokenString ?? "")
                 Auth.auth().signIn(with: credential) { [weak self] (result, error) in
                     if let result = result {
+                        SessionHelper.shared.saveUser(email: result.user.email)
                         SessionHelper.shared.saveSession()
                         self?.presenter?.goToRegister()
                     } else {

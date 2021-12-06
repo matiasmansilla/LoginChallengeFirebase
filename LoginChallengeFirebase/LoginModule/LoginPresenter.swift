@@ -21,7 +21,7 @@ class LoginPresenter: LoginPresenterProtocol {
     }
     
     func goToRegister() {
-        router?.goToRegister()
+        router?.goToRegister(from: view)
     }
     
     func loginFacebookFailed(with title: String?, error message: String?) {

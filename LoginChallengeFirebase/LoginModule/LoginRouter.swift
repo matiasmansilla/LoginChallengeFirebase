@@ -32,12 +32,17 @@ class LoginRouter: LoginRouterProtocol {
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {}, completion: nil)
     }
     
-    func goToRegister() {
+    func goToRegister(from context: AnyObject?) {
+        guard let context = context as? UIViewController else { return }
+        context.hideLoadingOverlay()
         RegisterRouter().goToRegister()
     }
     
     func presentError(from context: AnyObject?, with title: String?, message: String?) {
-        GenericErrorRouter().showGenericError(from: context, title: title, message: message, dismissHandler: nil)
+        guard let context = context as? UIViewController else { return }
+        GenericErrorRouter().showGenericError(from: context, title: title, message: message) {
+          context.hideLoadingOverlay()
+        }
     }
     
     

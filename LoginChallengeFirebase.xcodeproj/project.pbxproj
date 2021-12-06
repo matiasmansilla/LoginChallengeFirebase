@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC04C18E275DBB1300941C66 /* Codable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04C18D275DBB1300941C66 /* Codable+Dictionary.swift */; };
 		EC39C04A275D87100087FACE /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C045275D87100087FACE /* RegisterPresenter.swift */; };
 		EC39C04B275D87100087FACE /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C046275D87100087FACE /* RegisterRouter.swift */; };
 		EC39C04C275D87100087FACE /* RegisterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C047275D87100087FACE /* RegisterContracts.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC04C18D275DBB1300941C66 /* Codable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Dictionary.swift"; sourceTree = "<group>"; };
 		EC39C045275D87100087FACE /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		EC39C046275D87100087FACE /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		EC39C047275D87100087FACE /* RegisterContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContracts.swift; sourceTree = "<group>"; };
@@ -120,8 +122,8 @@
 			children = (
 				EC39C047275D87100087FACE /* RegisterContracts.swift */,
 				EC39C045275D87100087FACE /* RegisterPresenter.swift */,
-				EC39C046275D87100087FACE /* RegisterRouter.swift */,
 				EC39C049275D87100087FACE /* RegisterInteractor.swift */,
+				EC39C046275D87100087FACE /* RegisterRouter.swift */,
 				EC39C048275D87100087FACE /* RegisterViewController.swift */,
 				EC39C04F275D87250087FACE /* RegisterViewController.storyboard */,
 			);
@@ -232,6 +234,7 @@
 				EC39C054275D881A0087FACE /* ValidableTextField.swift */,
 				EC39C056275D89AA0087FACE /* CustomPrimaryButton.swift */,
 				EC39C058275D8C170087FACE /* UIViewController+LoadinfOverlay.swift */,
+				EC04C18D275DBB1300941C66 /* Codable+Dictionary.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				EC39C04B275D87100087FACE /* RegisterRouter.swift in Sources */,
 				EC39C04E275D87100087FACE /* RegisterInteractor.swift in Sources */,
 				EC5914F8275D64A30004F63D /* GenericErrorProtocols.swift in Sources */,
+				EC04C18E275DBB1300941C66 /* Codable+Dictionary.swift in Sources */,
 				ECF3BB9E275C3D280067936A /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,14 +12,10 @@ import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        //MARK: - Firebase
+        //MARK: Firebase
         FirebaseApp.configure()
-        
-        //MARK: - Facebook Login
+        //MARK: Facebook Login
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
@@ -30,10 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
     }
     
-    
-    
-    
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

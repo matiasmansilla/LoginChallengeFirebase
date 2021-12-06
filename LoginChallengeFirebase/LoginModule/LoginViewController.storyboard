@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -16,42 +21,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-LM-3SY">
-                                <rect key="frame" x="40" y="84" width="334" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYe-YO-EjI" userLabel="Facebook">
+                                <rect key="frame" x="58" y="424" width="298" height="48"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4R4-uG-2Tp">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dew-zE-NOu">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
-                                                <color key="backgroundColor" red="0.29116719959999998" green="0.40109136699999998" blue="0.67846095559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="Login with Facebook">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="loginFacebookTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CVC-P7-py7"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnFacebook" translatesAutoresizingMaskIntoConstraints="NO" id="HLR-tR-vyh">
+                                        <rect key="frame" x="14" y="12" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continuar con Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4l-Xp-wsk">
+                                        <rect key="frame" x="63" y="13" width="215" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="4R4-uG-2Tp" firstAttribute="top" secondItem="eq8-LM-3SY" secondAttribute="top" id="QSw-oe-yr4"/>
-                                    <constraint firstAttribute="trailing" secondItem="4R4-uG-2Tp" secondAttribute="trailing" id="TT6-tB-CgE"/>
-                                    <constraint firstItem="4R4-uG-2Tp" firstAttribute="leading" secondItem="eq8-LM-3SY" secondAttribute="leading" id="d8o-UQ-4B9"/>
-                                    <constraint firstAttribute="height" constant="300" id="tXm-ct-wbm"/>
+                                    <constraint firstAttribute="width" constant="298" id="7Fd-7P-QaD"/>
+                                    <constraint firstAttribute="height" constant="48" id="cBm-p1-Ydi"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eq8-LM-3SY" secondAttribute="trailing" constant="40" id="UKU-ya-gcf"/>
-                            <constraint firstItem="eq8-LM-3SY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Y7a-rM-D8c"/>
-                            <constraint firstItem="eq8-LM-3SY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="moT-1Q-hys"/>
+                            <constraint firstItem="XYe-YO-EjI" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="31V-SV-cFh"/>
+                            <constraint firstItem="XYe-YO-EjI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wLE-AP-rhm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="XYe-YO-EjI" id="urJ-0a-KZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,9 +69,7 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="btnFacebook" width="24" height="24"/>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

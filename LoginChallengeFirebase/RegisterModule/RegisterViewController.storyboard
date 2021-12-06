@@ -34,27 +34,27 @@
                                 <rect key="frame" x="20" y="138" width="374" height="552"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0L-Bu-k38" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwV-PR-Hop" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="48" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="64.5" width="374" height="50.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3k-Ub-tCH" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="96" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="129" width="374" height="50.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vSY-6p-uwR" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="144" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="193.5" width="374" height="50.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-sb-yyb" userLabel="aux">
-                                        <rect key="frame" x="0.0" y="192" width="374" height="360"/>
+                                        <rect key="frame" x="0.0" y="258" width="374" height="294"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -88,8 +88,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ageTextField" destination="v3k-Ub-tCH" id="1bs-sF-l3K"/>
                         <outlet property="dateTextField" destination="vSY-6p-uwR" id="6A4-HC-tm7"/>
-                        <outlet property="emailtextField" destination="v3k-Ub-tCH" id="1bs-sF-l3K"/>
                         <outlet property="lastNameTextField" destination="SwV-PR-Hop" id="VMr-5g-ZLy"/>
                         <outlet property="loginButton" destination="dbJ-CO-i3b" id="OIS-AT-CTF"/>
                         <outlet property="nameTextField" destination="W0L-Bu-k38" id="QeK-5x-6Pn"/>
@@ -103,19 +103,19 @@
     </scenes>
     <designables>
         <designable name="SwV-PR-Hop">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
         </designable>
         <designable name="W0L-Bu-k38">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
         </designable>
         <designable name="dbJ-CO-i3b">
             <size key="intrinsicContentSize" width="79" height="33"/>
         </designable>
         <designable name="v3k-Ub-tCH">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
         </designable>
         <designable name="vSY-6p-uwR">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
         </designable>
     </designables>
     <resources>

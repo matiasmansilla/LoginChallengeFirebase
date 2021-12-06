@@ -31,8 +31,17 @@ class RegisterRouter: RegisterRouterProtocol {
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {}, completion: nil)
     }
     
-    func goToHome() {
+    func goToHome(from context: AnyObject?) {
+        guard let context = context as? UIViewController else { return }
+        context.hideLoadingOverlay()
         MainWireframe.goToFirstScreen()
+    }
+    
+    func presentError(from context: AnyObject?, with title: String?, message: String?) {
+        guard let context = context as? UIViewController else { return }
+        GenericErrorRouter().showGenericError(from: context, title: title, message: message) {
+          context.hideLoadingOverlay()
+        }
     }
     
 }

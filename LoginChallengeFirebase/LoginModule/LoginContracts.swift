@@ -38,6 +38,6 @@ protocol LoginRouterProtocol: AnyObject {
     ///Optional
 //    func navigateToLogin(from context: AnyObject?)
     func goToLogin()
-    func goToRegister()
+    func goToRegister(from context: AnyObject?)
     func presentError(from context: AnyObject?, with title: String?, message: String?)
 }

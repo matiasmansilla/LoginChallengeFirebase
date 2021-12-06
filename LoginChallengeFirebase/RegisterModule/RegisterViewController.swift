@@ -12,7 +12,7 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var nameTextField: ValidableTextField!
     @IBOutlet weak var lastNameTextField: ValidableTextField!
-    @IBOutlet weak var emailtextField: ValidableTextField!
+    @IBOutlet weak var ageTextField: ValidableTextField!
     @IBOutlet weak var dateTextField: ValidableTextField!
     @IBOutlet weak var loginButton: CustomPrimaryButton!
     @IBOutlet weak var agreeTermsLabel: UILabel!
@@ -45,7 +45,7 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
         super.viewDidLoad()
         nameTextField.delegate = self
         lastNameTextField.delegate = self
-        emailtextField.delegate = self
+        ageTextField.delegate = self
         dateTextField.delegate = self
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -55,16 +55,9 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        setupNavBar()
         setupUI()
     }
-    
-    private func setupNavBar() {
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.barStyle = .black
-        self.navigationController?.navigationBar.tintColor = .white
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-    }
+
     
     private func setupUI() {
         loginButton.isEnabled = false
@@ -78,20 +71,18 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
         toolBar.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton], animated: true)
         dateTextField.inputAccessoryView = toolBar
         
-        self.title = "Creacion de cliente"
-        
         view.backgroundColor = constant.bgMainScreenColor
         
         nameTextField.placeholder = "Ingrese su nombre"
         lastNameTextField.placeholder = "Ingrese su apellido"
-        emailtextField.placeholder = "Ingrese su email"
+        ageTextField.placeholder = "Ingrese su edad"
         dateTextField.placeholder = "Ingrese su fecha de nacimiento"
     }
     
     private func validateForm() -> Bool {
         guard let nameText = nameTextField.text, !nameText.isEmpty else { return false }
         guard let lastNameText = lastNameTextField.text, !lastNameText.isEmpty else { return false }
-        guard let emailText = emailtextField.text, !emailText.isEmpty else { return false }
+        guard let emailText = ageTextField.text, !emailText.isEmpty else { return false }
         guard let dateText = dateTextField.text, !dateText.isEmpty else { return false }
         return true
     }
@@ -101,17 +92,16 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
         var user: User = User()
         user.name = nameTextField.text
         user.lastname = lastNameTextField.text
-        user.email = emailtextField.text
+//        user.email = ageTextField.text
         
-        let now: Date = Date()
-        if let birthday: Date = datePicker?.date {
-            let calendar: Calendar = Calendar.current
-            let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
-            user.age = ageComponents.year
-        }
+//        let now: Date = Date()
+//        if let birthday: Date = datePicker?.date {
+//            let calendar: Calendar = Calendar.current
+//            let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
+//            user.age = ageComponents.year
+//        }
         showLoadingOverlay()
-        
-        //presenter?.login(with: user)
+        presenter?.save(user: user)
     }
     
     @objc func datePickerDone() {
@@ -123,6 +113,12 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
         dateFormatted.dateFormat = "MM/dd/yyyy"
         if let date = datePicker?.date {
             dateTextField.text = dateFormatted.string(from: date)
+            let now: Date = Date()
+            if let birthday: Date = datePicker?.date {
+                let calendar: Calendar = Calendar.current
+                let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
+                ageTextField.text = "\(ageComponents.year ?? 0)"
+            }
         }
     }
     

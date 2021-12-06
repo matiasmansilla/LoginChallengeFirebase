@@ -14,6 +14,11 @@ class HomePresenter: HomePresenterProtocol {
     weak var view: HomeViewProtocol?
     var interactor: HomeInteractorProtocol?
     var router: HomeRouterProtocol?
+    var email: String
+    
+    internal init(email: String) {
+        self.email = email
+    }
     
     func logout() {
         interactor?.logoutAndCleanSession()
@@ -21,6 +26,18 @@ class HomePresenter: HomePresenterProtocol {
     
     func navigateToLogin() {
         router?.goToLogin()
+    }
+    
+    func getEmail() {
+        view?.refresh(name: email)
+    }
+    
+    func observeData() {
+        interactor?.observeData()
+    }
+    
+    func updateView(with name: String) {
+        view?.refresh(name: name)
     }
     
 }

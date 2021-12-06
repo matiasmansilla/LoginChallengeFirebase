@@ -11,7 +11,7 @@ class MainWireframe {
     
     static func goToFirstScreen() {
         if SessionHelper.shared.isSessionStored() {
-            HomeRouter().goToHome()
+            HomeRouter().goToHome(email: SessionHelper.shared.getUser() ?? "")
         } else {
             LoginRouter().goToLogin()
         }
