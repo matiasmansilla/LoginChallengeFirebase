@@ -88,18 +88,10 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
     }
     
     @IBAction func registerButtonAction(_ sender: Any) {
-        
         var user: User = User()
         user.name = nameTextField.text
         user.lastname = lastNameTextField.text
-//        user.email = ageTextField.text
-        
-//        let now: Date = Date()
-//        if let birthday: Date = datePicker?.date {
-//            let calendar: Calendar = Calendar.current
-//            let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
-//            user.age = ageComponents.year
-//        }
+        user.age = Int(ageTextField.text ?? "")
         showLoadingOverlay()
         presenter?.save(user: user)
     }

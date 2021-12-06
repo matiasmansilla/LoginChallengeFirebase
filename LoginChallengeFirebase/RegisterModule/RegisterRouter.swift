@@ -9,6 +9,7 @@ import UIKit
 
 /// Register Module Router (aka: Wireframe)
 class RegisterRouter: RegisterRouterProtocol {
+    
     func instantiate() -> RegisterViewController {
         let view = RegisterViewController.instantiate()
         let presenter: RegisterPresenterProtocol? = RegisterPresenter()
