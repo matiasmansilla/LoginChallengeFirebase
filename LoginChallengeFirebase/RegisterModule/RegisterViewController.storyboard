@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat-medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="LoginChallengeFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mkx-la-pac">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ea-ky-gT8">
+                                <rect key="frame" x="20" y="88" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizableText" value="login_welcome_message"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="bKf-jq-ltO">
+                                <rect key="frame" x="20" y="138" width="374" height="552"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0L-Bu-k38" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwV-PR-Hop" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3k-Ub-tCH" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="96" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vSY-6p-uwR" customClass="ValidableTextField" customModule="LoginChallengeFirebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-sb-yyb" userLabel="aux">
+                                        <rect key="frame" x="0.0" y="192" width="374" height="360"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbJ-CO-i3b" customClass="CustomPrimaryButton" customModule="LoginChallengeFirebase" customModuleProvider="target">
+                                <rect key="frame" x="167.5" y="798" width="79" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="o0H-Cj-fef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1jA-Ov-oac"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r1E-Cd-uSK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ea-ky-gT8" firstAttribute="top" secondItem="r1E-Cd-uSK" secondAttribute="top" constant="44" id="22y-OM-z3t"/>
+                            <constraint firstItem="r1E-Cd-uSK" firstAttribute="trailing" secondItem="3Ea-ky-gT8" secondAttribute="trailing" constant="20" id="42e-9n-k0Q"/>
+                            <constraint firstItem="3Ea-ky-gT8" firstAttribute="leading" secondItem="r1E-Cd-uSK" secondAttribute="leading" constant="20" id="G36-yu-UdQ"/>
+                            <constraint firstItem="dbJ-CO-i3b" firstAttribute="centerX" secondItem="Mkx-la-pac" secondAttribute="centerX" id="Ir3-Fy-lsJ"/>
+                            <constraint firstItem="r1E-Cd-uSK" firstAttribute="bottom" secondItem="dbJ-CO-i3b" secondAttribute="bottom" constant="20" id="Njc-j8-sPl"/>
+                            <constraint firstItem="r1E-Cd-uSK" firstAttribute="trailing" secondItem="bKf-jq-ltO" secondAttribute="trailing" constant="20" id="XO6-Hr-jg0"/>
+                            <constraint firstItem="bKf-jq-ltO" firstAttribute="leading" secondItem="r1E-Cd-uSK" secondAttribute="leading" constant="20" id="b8E-PU-Rzt"/>
+                            <constraint firstItem="dbJ-CO-i3b" firstAttribute="top" secondItem="bKf-jq-ltO" secondAttribute="bottom" constant="108" id="coR-tO-5Tf"/>
+                            <constraint firstItem="bKf-jq-ltO" firstAttribute="top" secondItem="3Ea-ky-gT8" secondAttribute="bottom" constant="50" id="vgZ-Ae-3Ga"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="vSY-6p-uwR" id="6A4-HC-tm7"/>
+                        <outlet property="emailtextField" destination="v3k-Ub-tCH" id="1bs-sF-l3K"/>
+                        <outlet property="lastNameTextField" destination="SwV-PR-Hop" id="VMr-5g-ZLy"/>
+                        <outlet property="loginButton" destination="dbJ-CO-i3b" id="OIS-AT-CTF"/>
+                        <outlet property="nameTextField" destination="W0L-Bu-k38" id="QeK-5x-6Pn"/>
+                        <outlet property="welcomeLabel" destination="3Ea-ky-gT8" id="PR5-0e-dx9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="84"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="SwV-PR-Hop">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="W0L-Bu-k38">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="dbJ-CO-i3b">
+            <size key="intrinsicContentSize" width="79" height="33"/>
+        </designable>
+        <designable name="v3k-Ub-tCH">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="vSY-6p-uwR">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

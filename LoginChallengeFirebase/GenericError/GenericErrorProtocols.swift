@@ -7,7 +7,7 @@
 
 import Foundation
 // MARK: - Presenter Protocol
-protocol GenericErrorPresenterProtocol: class {
+protocol GenericErrorPresenterProtocol: AnyObject {
   var view: GenericErrorViewProtocol? { get set }
   var interactor: GenericErrorInteractorProtocol? { get set }
   var router: GenericErrorRouterProtocol? { get set }
@@ -17,18 +17,18 @@ protocol GenericErrorPresenterProtocol: class {
   func dismissError(dismissHandler: (() -> Void)?)
 }
 // MARK: - View Protocol
-protocol GenericErrorViewProtocol: class {
+protocol GenericErrorViewProtocol: AnyObject {
   var presenter: GenericErrorPresenterProtocol? { get set }
   func loadErrorData(with title: String, message: String)
 }
 // MARK: - Interactor Protocol
-protocol GenericErrorInteractorProtocol: class {
+protocol GenericErrorInteractorProtocol: AnyObject {
   var presenter: GenericErrorPresenterProtocol? { get set }
   func getErrorData()
   func dismissError()
 }
 // MARK: - Router Protocol
-protocol GenericErrorRouterProtocol: class {
+protocol GenericErrorRouterProtocol: AnyObject {
   func showGenericError(from context: AnyObject?, title: String?, message: String?, dismissHandler: (() -> Void)?)
   func dismissError(from context: AnyObject?, dismissHandler: (() -> Void)?)
 }

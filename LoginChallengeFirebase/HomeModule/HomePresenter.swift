@@ -9,11 +9,19 @@ import Foundation
 
 /// Home Module Presenter
 class HomePresenter: HomePresenterProtocol {
-    
+
     //MARK: - Properties
     weak var view: HomeViewProtocol?
     var interactor: HomeInteractorProtocol?
     var router: HomeRouterProtocol?
+    
+    func logout() {
+        interactor?.logoutAndCleanSession()
+    }
+    
+    func navigateToLogin() {
+        router?.goToLogin()
+    }
     
 }
 

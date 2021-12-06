@@ -13,6 +13,8 @@ protocol HomePresenterProtocol: AnyObject {
     var view: HomeViewProtocol? { get set }
     var interactor: HomeInteractorProtocol? { get set }
     var router: HomeRouterProtocol? { get set }
+    func logout()
+    func navigateToLogin()
 }
 
 //MARK: View -
@@ -25,6 +27,7 @@ protocol HomeViewProtocol: AnyObject {
 /// Home Module Interactor Protocol
 protocol HomeInteractorProtocol: AnyObject {
     var presenter: HomePresenterProtocol? { get set }
+    func logoutAndCleanSession()
 }
 
 //MARK: Router -
@@ -32,4 +35,6 @@ protocol HomeInteractorProtocol: AnyObject {
 protocol HomeRouterProtocol: AnyObject {
     ///Optional
 //    func navigateToHome(from context: AnyObject?)
+    func goToHome()
+    func goToLogin()
 }

@@ -9,8 +9,14 @@ import UIKit
 
 /// Home Module Interactor
 class HomeInteractor: HomeInteractorProtocol {
-    
+
     //MARK: - Properties
     weak var presenter: HomePresenterProtocol?
+    
+    //MARK: - Methods
+    func logoutAndCleanSession() {
+        SessionHelper.shared.deleteSession()
+        presenter?.navigateToLogin()
+    }
 
 }

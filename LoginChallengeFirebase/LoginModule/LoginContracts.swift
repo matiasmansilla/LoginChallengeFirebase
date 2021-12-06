@@ -5,7 +5,7 @@
 //  Created Dardo Mansilla on 04/12/2021.
 //
 
-import UIKit
+import Foundation
 
 //MARK: Presenter -
 /// Login Module Presenter Protocol
@@ -13,6 +13,9 @@ protocol LoginPresenterProtocol: AnyObject {
     var view: LoginViewProtocol? { get set }
     var interactor: LoginInteractorProtocol? { get set }
     var router: LoginRouterProtocol? { get set }
+    func loginWithFacebook()
+    func loginFacebookFailed(with title: String?, error message: String?)
+    func goToRegister()
 }
 
 //MARK: View -
@@ -25,6 +28,8 @@ protocol LoginViewProtocol: AnyObject {
 /// Login Module Interactor Protocol
 protocol LoginInteractorProtocol: AnyObject {
     var presenter: LoginPresenterProtocol? { get set }
+    func loginFacebook(from context: AnyObject?)
+    
 }
 
 //MARK: Router -
@@ -32,4 +37,7 @@ protocol LoginInteractorProtocol: AnyObject {
 protocol LoginRouterProtocol: AnyObject {
     ///Optional
 //    func navigateToLogin(from context: AnyObject?)
+    func goToLogin()
+    func goToRegister()
+    func presentError(from context: AnyObject?, with title: String?, message: String?)
 }

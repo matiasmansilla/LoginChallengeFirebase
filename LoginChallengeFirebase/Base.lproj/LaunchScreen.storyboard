@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,40 +40,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="PNp-gK-4bk">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple-developer" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-3p-l1S">
-                            <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed for Intercorp retail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzh-YW-a0A">
-                            <rect key="frame" x="269" y="831" width="125" height="11"/>
-                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="12"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="ULo-xV-vOc"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstItem="ULo-xV-vOc" firstAttribute="bottom" secondItem="xzh-YW-a0A" secondAttribute="bottom" constant="20" id="6dn-ex-3QU"/>
-                        <constraint firstItem="6LM-3p-l1S" firstAttribute="leading" secondItem="ULo-xV-vOc" secondAttribute="leading" id="KLr-qz-neW"/>
-                        <constraint firstItem="ULo-xV-vOc" firstAttribute="trailing" secondItem="xzh-YW-a0A" secondAttribute="trailing" constant="20" id="Qsg-zH-Zoc"/>
-                        <constraint firstItem="6LM-3p-l1S" firstAttribute="top" secondItem="ULo-xV-vOc" secondAttribute="top" id="e1O-Gi-yBf"/>
-                        <constraint firstItem="ULo-xV-vOc" firstAttribute="trailing" secondItem="6LM-3p-l1S" secondAttribute="trailing" id="sno-Ko-Cga"/>
-                        <constraint firstItem="ULo-xV-vOc" firstAttribute="bottom" secondItem="6LM-3p-l1S" secondAttribute="bottom" id="yZn-hp-qPF"/>
-                    </constraints>
-                </view>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
     <resources>
         <image name="apple-developer" width="1200" height="630"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

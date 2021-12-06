@@ -1,36 +1,37 @@
 //
-//  HomeRouter.swift
+//  RegisterRouter.swift
 //  LoginChallengeFirebase
 //
-//  Created Dardo Mansilla on 04/12/2021.
+//  Created Dardo Mansilla on 05/12/2021.
 //
 
 import UIKit
 
-/// Home Module Router (aka: Wireframe)
-class HomeRouter: HomeRouterProtocol {
-    
-    func instantiate() -> HomeViewController {
-        let view = HomeViewController.instantiate()
-        let presenter: HomePresenterProtocol? = HomePresenter()
-        let interactor: HomeInteractorProtocol? = HomeInteractor()
+/// Register Module Router (aka: Wireframe)
+class RegisterRouter: RegisterRouterProtocol {
+    func instantiate() -> RegisterViewController {
+        let view = RegisterViewController.instantiate()
+        let presenter: RegisterPresenterProtocol? = RegisterPresenter()
+        let interactor: RegisterInteractorProtocol? = RegisterInteractor()
+//        let apiDataManager: LoginAPIDataManagerProtocol = LoginAPIDataManager()
         ///Connections
         view.presenter = presenter
         presenter?.view = view
         presenter?.router = self
         presenter?.interactor = interactor
         interactor?.presenter = presenter
+//        interactor.apiDataManager = apiDataManager
         return view
     }
     
-    func goToHome() {
+    func goToRegister() {
         let view = instantiate()
         guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return }
         window.rootViewController = view
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {}, completion: nil)
     }
     
-    func goToLogin() {
+    func goToHome() {
         MainWireframe.goToFirstScreen()
     }
     

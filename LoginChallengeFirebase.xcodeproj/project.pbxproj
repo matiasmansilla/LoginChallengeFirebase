@@ -7,16 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC39C04A275D87100087FACE /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C045275D87100087FACE /* RegisterPresenter.swift */; };
+		EC39C04B275D87100087FACE /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C046275D87100087FACE /* RegisterRouter.swift */; };
+		EC39C04C275D87100087FACE /* RegisterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C047275D87100087FACE /* RegisterContracts.swift */; };
+		EC39C04D275D87100087FACE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C048275D87100087FACE /* RegisterViewController.swift */; };
+		EC39C04E275D87100087FACE /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C049275D87100087FACE /* RegisterInteractor.swift */; };
+		EC39C050275D87250087FACE /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC39C04F275D87250087FACE /* RegisterViewController.storyboard */; };
+		EC39C053275D87BC0087FACE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C052275D87BC0087FACE /* User.swift */; };
+		EC39C055275D881A0087FACE /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C054275D881A0087FACE /* ValidableTextField.swift */; };
+		EC39C057275D89AA0087FACE /* CustomPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C056275D89AA0087FACE /* CustomPrimaryButton.swift */; };
+		EC39C059275D8C170087FACE /* UIViewController+LoadinfOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C058275D8C170087FACE /* UIViewController+LoadinfOverlay.swift */; };
+		EC39C05C275DA2620087FACE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C05B275DA2620087FACE /* Constants.swift */; };
+		EC5914F5275D64A30004F63D /* GenericErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5914EB275D64A20004F63D /* GenericErrorPresenter.swift */; };
+		EC5914F6275D64A30004F63D /* GenericErrorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5914ED275D64A20004F63D /* GenericErrorViewController.storyboard */; };
+		EC5914F7275D64A30004F63D /* GenericErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5914EE275D64A20004F63D /* GenericErrorViewController.swift */; };
+		EC5914F8275D64A30004F63D /* GenericErrorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5914F0275D64A20004F63D /* GenericErrorProtocols.swift */; };
+		EC5914F9275D64A30004F63D /* GenericErrorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5914F2275D64A30004F63D /* GenericErrorInteractor.swift */; };
+		EC5914FA275D64A30004F63D /* GenericErrorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5914F4275D64A30004F63D /* GenericErrorRouter.swift */; };
+		EC5914FD275D64F10004F63D /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5914FC275D64F10004F63D /* LoadingOverlay.swift */; };
+		EC5914FF275D652E0004F63D /* UIView+AddEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5914FE275D652E0004F63D /* UIView+AddEmbedded.swift */; };
+		EC591502275D669D0004F63D /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = EC591501275D669D0004F63D /* FacebookCore */; };
+		EC591504275D669D0004F63D /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = EC591503275D669D0004F63D /* FacebookLogin */; };
+		EC591506275D669D0004F63D /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = EC591505275D669D0004F63D /* FacebookShare */; };
+		EC59150A275D6C440004F63D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC591509275D6C440004F63D /* FirebaseAnalytics */; };
+		EC59150C275D6C440004F63D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC59150B275D6C440004F63D /* FirebaseCrashlytics */; };
+		EC59150E275D6C440004F63D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EC59150D275D6C440004F63D /* FirebaseDatabase */; };
+		EC591510275D6CFC0004F63D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EC59150F275D6CFC0004F63D /* FirebaseAuth */; };
 		ECF3BB21275C10C50067936A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BB20275C10C50067936A /* AppDelegate.swift */; };
 		ECF3BB23275C10C50067936A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BB22275C10C50067936A /* SceneDelegate.swift */; };
-		ECF3BB25275C10C50067936A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BB24275C10C50067936A /* ViewController.swift */; };
-		ECF3BB28275C10C50067936A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3BB26275C10C50067936A /* Main.storyboard */; };
 		ECF3BB2A275C10C80067936A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF3BB29275C10C80067936A /* Assets.xcassets */; };
 		ECF3BB2D275C10C80067936A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3BB2B275C10C80067936A /* LaunchScreen.storyboard */; };
 		ECF3BB35275C12200067936A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECF3BB34275C12200067936A /* GoogleService-Info.plist */; };
-		ECF3BB38275C18170067936A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ECF3BB37275C18170067936A /* FirebaseAnalytics */; };
-		ECF3BB3A275C18170067936A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ECF3BB39275C18170067936A /* FirebaseAuth */; };
-		ECF3BB3C275C18170067936A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ECF3BB3B275C18170067936A /* FirebaseDatabase */; };
 		ECF3BB9D275C3D280067936A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BB98275C3D280067936A /* HomePresenter.swift */; };
 		ECF3BB9E275C3D280067936A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BB99275C3D280067936A /* HomeRouter.swift */; };
 		ECF3BB9F275C3D280067936A /* HomeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BB9A275C3D280067936A /* HomeContracts.swift */; };
@@ -29,14 +50,33 @@
 		ECF3BBAF275C4B380067936A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BBAA275C4B380067936A /* LoginViewController.swift */; };
 		ECF3BBB0275C4B380067936A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BBAB275C4B380067936A /* LoginInteractor.swift */; };
 		ECF3BBB2275C4B530067936A /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3BBB1275C4B530067936A /* LoginViewController.storyboard */; };
+		ECF3BBB4275C50540067936A /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3BBB3275C50540067936A /* HomeViewController.storyboard */; };
+		ECF3BBB7275C50E10067936A /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3BBB6275C50E10067936A /* MainWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC39C045275D87100087FACE /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		EC39C046275D87100087FACE /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		EC39C047275D87100087FACE /* RegisterContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContracts.swift; sourceTree = "<group>"; };
+		EC39C048275D87100087FACE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EC39C049275D87100087FACE /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		EC39C04F275D87250087FACE /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		EC39C052275D87BC0087FACE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC39C054275D881A0087FACE /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
+		EC39C056275D89AA0087FACE /* CustomPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrimaryButton.swift; sourceTree = "<group>"; };
+		EC39C058275D8C170087FACE /* UIViewController+LoadinfOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadinfOverlay.swift"; sourceTree = "<group>"; };
+		EC39C05B275DA2620087FACE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC5914EB275D64A20004F63D /* GenericErrorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorPresenter.swift; sourceTree = "<group>"; };
+		EC5914ED275D64A20004F63D /* GenericErrorViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GenericErrorViewController.storyboard; sourceTree = "<group>"; };
+		EC5914EE275D64A20004F63D /* GenericErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorViewController.swift; sourceTree = "<group>"; };
+		EC5914F0275D64A20004F63D /* GenericErrorProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorProtocols.swift; sourceTree = "<group>"; };
+		EC5914F2275D64A30004F63D /* GenericErrorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorInteractor.swift; sourceTree = "<group>"; };
+		EC5914F4275D64A30004F63D /* GenericErrorRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorRouter.swift; sourceTree = "<group>"; };
+		EC5914FC275D64F10004F63D /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		EC5914FE275D652E0004F63D /* UIView+AddEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddEmbedded.swift"; sourceTree = "<group>"; };
 		ECF3BB1D275C10C50067936A /* LoginChallengeFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginChallengeFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3BB20275C10C50067936A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF3BB22275C10C50067936A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECF3BB24275C10C50067936A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECF3BB27275C10C50067936A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECF3BB29275C10C80067936A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECF3BB2C275C10C80067936A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECF3BB2E275C10C80067936A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +93,8 @@
 		ECF3BBAA275C4B380067936A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ECF3BBAB275C4B380067936A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		ECF3BBB1275C4B530067936A /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		ECF3BBB3275C50540067936A /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		ECF3BBB6275C50E10067936A /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,20 +102,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF3BB3C275C18170067936A /* FirebaseDatabase in Frameworks */,
-				ECF3BB38275C18170067936A /* FirebaseAnalytics in Frameworks */,
-				ECF3BB3A275C18170067936A /* FirebaseAuth in Frameworks */,
+				EC591504275D669D0004F63D /* FacebookLogin in Frameworks */,
+				EC591502275D669D0004F63D /* FacebookCore in Frameworks */,
+				EC591506275D669D0004F63D /* FacebookShare in Frameworks */,
+				EC59150C275D6C440004F63D /* FirebaseCrashlytics in Frameworks */,
+				EC59150A275D6C440004F63D /* FirebaseAnalytics in Frameworks */,
+				EC591510275D6CFC0004F63D /* FirebaseAuth in Frameworks */,
+				EC59150E275D6C440004F63D /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC39C044275D86DB0087FACE /* RegisterModule */ = {
+			isa = PBXGroup;
+			children = (
+				EC39C047275D87100087FACE /* RegisterContracts.swift */,
+				EC39C045275D87100087FACE /* RegisterPresenter.swift */,
+				EC39C046275D87100087FACE /* RegisterRouter.swift */,
+				EC39C049275D87100087FACE /* RegisterInteractor.swift */,
+				EC39C048275D87100087FACE /* RegisterViewController.swift */,
+				EC39C04F275D87250087FACE /* RegisterViewController.storyboard */,
+			);
+			path = RegisterModule;
+			sourceTree = "<group>";
+		};
+		EC39C051275D87B00087FACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC39C052275D87BC0087FACE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC39C05A275DA2540087FACE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EC39C05B275DA2620087FACE /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EC5914E9275D64A20004F63D /* GenericError */ = {
+			isa = PBXGroup;
+			children = (
+				EC5914EB275D64A20004F63D /* GenericErrorPresenter.swift */,
+				EC5914ED275D64A20004F63D /* GenericErrorViewController.storyboard */,
+				EC5914EE275D64A20004F63D /* GenericErrorViewController.swift */,
+				EC5914F0275D64A20004F63D /* GenericErrorProtocols.swift */,
+				EC5914F2275D64A30004F63D /* GenericErrorInteractor.swift */,
+				EC5914F4275D64A30004F63D /* GenericErrorRouter.swift */,
+			);
+			path = GenericError;
+			sourceTree = "<group>";
+		};
+		EC5914FB275D64F10004F63D /* LoadingOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				EC5914FC275D64F10004F63D /* LoadingOverlay.swift */,
+			);
+			path = LoadingOverlay;
+			sourceTree = "<group>";
+		};
+		EC591500275D669D0004F63D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECF3BB14275C10C50067936A = {
 			isa = PBXGroup;
 			children = (
 				ECF3BB1F275C10C50067936A /* LoginChallengeFirebase */,
 				ECF3BB1E275C10C50067936A /* Products */,
+				EC591500275D669D0004F63D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,13 +192,16 @@
 		ECF3BB1F275C10C50067936A /* LoginChallengeFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				EC39C05A275DA2540087FACE /* Constants */,
+				EC39C051275D87B00087FACE /* Model */,
+				EC39C044275D86DB0087FACE /* RegisterModule */,
+				ECF3BBB5275C50C40067936A /* MainWireframe */,
 				ECF3BBA6275C4B0A0067936A /* LoginModule */,
-				ECF3BBA2275C480C0067936A /* Utilities */,
 				ECF3BB4B275C323C0067936A /* HomeModule */,
+				EC5914E9275D64A20004F63D /* GenericError */,
+				ECF3BBA2275C480C0067936A /* Utilities */,
 				ECF3BB20275C10C50067936A /* AppDelegate.swift */,
 				ECF3BB22275C10C50067936A /* SceneDelegate.swift */,
-				ECF3BB24275C10C50067936A /* ViewController.swift */,
-				ECF3BB26275C10C50067936A /* Main.storyboard */,
 				ECF3BB29275C10C80067936A /* Assets.xcassets */,
 				ECF3BB2B275C10C80067936A /* LaunchScreen.storyboard */,
 				ECF3BB2E275C10C80067936A /* Info.plist */,
@@ -106,11 +213,12 @@
 		ECF3BB4B275C323C0067936A /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
+				ECF3BB9A275C3D280067936A /* HomeContracts.swift */,
 				ECF3BB98275C3D280067936A /* HomePresenter.swift */,
 				ECF3BB99275C3D280067936A /* HomeRouter.swift */,
-				ECF3BB9A275C3D280067936A /* HomeContracts.swift */,
-				ECF3BB9B275C3D280067936A /* HomeViewController.swift */,
 				ECF3BB9C275C3D280067936A /* HomeInteractor.swift */,
+				ECF3BB9B275C3D280067936A /* HomeViewController.swift */,
+				ECF3BBB3275C50540067936A /* HomeViewController.storyboard */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -118,7 +226,12 @@
 		ECF3BBA2275C480C0067936A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EC5914FB275D64F10004F63D /* LoadingOverlay */,
 				ECF3BBA3275C481E0067936A /* SessionHelper.swift */,
+				EC5914FE275D652E0004F63D /* UIView+AddEmbedded.swift */,
+				EC39C054275D881A0087FACE /* ValidableTextField.swift */,
+				EC39C056275D89AA0087FACE /* CustomPrimaryButton.swift */,
+				EC39C058275D8C170087FACE /* UIViewController+LoadinfOverlay.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -126,14 +239,22 @@
 		ECF3BBA6275C4B0A0067936A /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				ECF3BBA9275C4B380067936A /* LoginContracts.swift */,
 				ECF3BBA7275C4B380067936A /* LoginPresenter.swift */,
 				ECF3BBA8275C4B380067936A /* LoginRouter.swift */,
-				ECF3BBA9275C4B380067936A /* LoginContracts.swift */,
-				ECF3BBAA275C4B380067936A /* LoginViewController.swift */,
 				ECF3BBAB275C4B380067936A /* LoginInteractor.swift */,
+				ECF3BBAA275C4B380067936A /* LoginViewController.swift */,
 				ECF3BBB1275C4B530067936A /* LoginViewController.storyboard */,
 			);
 			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		ECF3BBB5275C50C40067936A /* MainWireframe */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3BBB6275C50E10067936A /* MainWireframe.swift */,
+			);
+			path = MainWireframe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +274,13 @@
 			);
 			name = LoginChallengeFirebase;
 			packageProductDependencies = (
-				ECF3BB37275C18170067936A /* FirebaseAnalytics */,
-				ECF3BB39275C18170067936A /* FirebaseAuth */,
-				ECF3BB3B275C18170067936A /* FirebaseDatabase */,
+				EC591501275D669D0004F63D /* FacebookCore */,
+				EC591503275D669D0004F63D /* FacebookLogin */,
+				EC591505275D669D0004F63D /* FacebookShare */,
+				EC591509275D6C440004F63D /* FirebaseAnalytics */,
+				EC59150B275D6C440004F63D /* FirebaseCrashlytics */,
+				EC59150D275D6C440004F63D /* FirebaseDatabase */,
+				EC59150F275D6CFC0004F63D /* FirebaseAuth */,
 			);
 			productName = LoginChallengeFirebase;
 			productReference = ECF3BB1D275C10C50067936A /* LoginChallengeFirebase.app */;
@@ -186,6 +311,7 @@
 			mainGroup = ECF3BB14275C10C50067936A;
 			packageReferences = (
 				ECF3BB36275C18170067936A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ECF3BBB8275D5B540067936A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = ECF3BB1E275C10C50067936A /* Products */;
 			projectDirPath = "";
@@ -201,11 +327,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5914F6275D64A30004F63D /* GenericErrorViewController.storyboard in Resources */,
+				ECF3BBB4275C50540067936A /* HomeViewController.storyboard in Resources */,
 				ECF3BB2D275C10C80067936A /* LaunchScreen.storyboard in Resources */,
+				EC39C050275D87250087FACE /* RegisterViewController.storyboard in Resources */,
 				ECF3BB35275C12200067936A /* GoogleService-Info.plist in Resources */,
 				ECF3BBB2275C4B530067936A /* LoginViewController.storyboard in Resources */,
 				ECF3BB2A275C10C80067936A /* Assets.xcassets in Resources */,
-				ECF3BB28275C10C50067936A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,19 +344,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF3BBB7275C50E10067936A /* MainWireframe.swift in Sources */,
 				ECF3BB9F275C3D280067936A /* HomeContracts.swift in Sources */,
 				ECF3BBA4275C481E0067936A /* SessionHelper.swift in Sources */,
+				EC39C04A275D87100087FACE /* RegisterPresenter.swift in Sources */,
 				ECF3BBB0275C4B380067936A /* LoginInteractor.swift in Sources */,
-				ECF3BB25275C10C50067936A /* ViewController.swift in Sources */,
+				EC39C053275D87BC0087FACE /* User.swift in Sources */,
+				EC5914F5275D64A30004F63D /* GenericErrorPresenter.swift in Sources */,
+				EC5914FF275D652E0004F63D /* UIView+AddEmbedded.swift in Sources */,
 				ECF3BB21275C10C50067936A /* AppDelegate.swift in Sources */,
+				EC39C05C275DA2620087FACE /* Constants.swift in Sources */,
+				EC39C059275D8C170087FACE /* UIViewController+LoadinfOverlay.swift in Sources */,
+				EC39C04C275D87100087FACE /* RegisterContracts.swift in Sources */,
 				ECF3BBAC275C4B380067936A /* LoginPresenter.swift in Sources */,
 				ECF3BBAE275C4B380067936A /* LoginContracts.swift in Sources */,
+				EC5914F7275D64A30004F63D /* GenericErrorViewController.swift in Sources */,
 				ECF3BBA1275C3D280067936A /* HomeInteractor.swift in Sources */,
+				EC39C057275D89AA0087FACE /* CustomPrimaryButton.swift in Sources */,
+				EC5914FD275D64F10004F63D /* LoadingOverlay.swift in Sources */,
+				EC5914FA275D64A30004F63D /* GenericErrorRouter.swift in Sources */,
 				ECF3BB23275C10C50067936A /* SceneDelegate.swift in Sources */,
+				EC39C04D275D87100087FACE /* RegisterViewController.swift in Sources */,
 				ECF3BB9D275C3D280067936A /* HomePresenter.swift in Sources */,
 				ECF3BBAD275C4B380067936A /* LoginRouter.swift in Sources */,
+				EC39C055275D881A0087FACE /* ValidableTextField.swift in Sources */,
 				ECF3BBA0275C3D280067936A /* HomeViewController.swift in Sources */,
+				EC5914F9275D64A30004F63D /* GenericErrorInteractor.swift in Sources */,
 				ECF3BBAF275C4B380067936A /* LoginViewController.swift in Sources */,
+				EC39C04B275D87100087FACE /* RegisterRouter.swift in Sources */,
+				EC39C04E275D87100087FACE /* RegisterInteractor.swift in Sources */,
+				EC5914F8275D64A30004F63D /* GenericErrorProtocols.swift in Sources */,
 				ECF3BB9E275C3D280067936A /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +381,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ECF3BB26275C10C50067936A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECF3BB27275C10C50067936A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECF3BB2B275C10C80067936A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -386,7 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DMMansilla.LoginChallengeFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -405,7 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DMMansilla.LoginChallengeFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -441,23 +578,51 @@
 				minimumVersion = 8.10.0;
 			};
 		};
+		ECF3BBB8275D5B540067936A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ECF3BB37275C18170067936A /* FirebaseAnalytics */ = {
+		EC591501275D669D0004F63D /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF3BBB8275D5B540067936A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		EC591503275D669D0004F63D /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF3BBB8275D5B540067936A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		EC591505275D669D0004F63D /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF3BBB8275D5B540067936A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		EC591509275D6C440004F63D /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECF3BB36275C18170067936A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		ECF3BB39275C18170067936A /* FirebaseAuth */ = {
+		EC59150B275D6C440004F63D /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECF3BB36275C18170067936A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
+			productName = FirebaseCrashlytics;
 		};
-		ECF3BB3B275C18170067936A /* FirebaseDatabase */ = {
+		EC59150D275D6C440004F63D /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECF3BB36275C18170067936A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		EC59150F275D6CFC0004F63D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF3BB36275C18170067936A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

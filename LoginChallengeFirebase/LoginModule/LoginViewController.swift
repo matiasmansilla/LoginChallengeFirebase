@@ -27,4 +27,8 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func loginFacebookTapped(_ sender: Any) {
+        presenter?.loginWithFacebook()
+    }
 }

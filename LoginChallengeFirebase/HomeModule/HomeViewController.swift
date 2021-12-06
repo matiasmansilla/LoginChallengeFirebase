@@ -21,4 +21,15 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         return HomeViewController()
       }
     }
+    
+    //MARK: - Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .green
+    }
+    
+    @IBAction func signOutTapped(_ sender: Any) {
+        presenter?.logout()
+    }
+    
 }
