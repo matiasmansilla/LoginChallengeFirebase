@@ -34,4 +34,11 @@ class HomeRouter: HomeRouterProtocol {
         MainWireframe.goToFirstScreen()
     }
     
+    func presentError(from context: AnyObject?, with title: String?, message: String?) {
+        guard let context = context as? UIViewController else { return }
+        GenericErrorRouter().showGenericError(from: context, title: title, message: message) {
+          context.hideLoadingOverlay()
+        }
+    }
+    
 }

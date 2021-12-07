@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseDatabase
+import FBSDKLoginKit
+import FirebaseAuth
 
 /// Home Module Interactor
 class HomeInteractor: HomeInteractorProtocol {
@@ -14,18 +16,19 @@ class HomeInteractor: HomeInteractorProtocol {
     //MARK: - Properties
     weak var presenter: HomePresenterProtocol?
     private var ref: DatabaseReference? = Database.database().reference()
+    private let loginFacebookManager = LoginManager()
     
     //MARK: - Methods
     func logoutAndCleanSession() {
-        SessionHelper.shared.deleteSession()
-        presenter?.navigateToLogin()
-    }
-    
-    func observeData() {
-//        ref?.child(SessionHelper.shared.getUser() ?? "").observe(.childChanged, with: { snapshot in
-//            print(snapshot.value ?? "")
-//            self.presenter?.updateView(with: snapshot.value as? String ?? "")
-//        })
+        loginFacebookManager.logOut()
+        do {
+            try Auth.auth().signOut()
+            SessionHelper.shared.deleteSession()
+            presenter?.navigateToLogin()
+        } catch  {
+            presenter?.logoutFailed(with: "Error", error: "Logout error")
+        }
+        
     }
 
 }

@@ -15,9 +15,8 @@ protocol HomePresenterProtocol: AnyObject {
     var router: HomeRouterProtocol? { get set }
     func getEmail()
     func logout()
+    func logoutFailed(with title: String?, error message: String?)
     func navigateToLogin()
-    func observeData()
-    func updateView(with name: String)
 }
 
 //MARK: View -
@@ -32,14 +31,12 @@ protocol HomeViewProtocol: AnyObject {
 protocol HomeInteractorProtocol: AnyObject {
     var presenter: HomePresenterProtocol? { get set }
     func logoutAndCleanSession()
-    func observeData()
 }
 
 //MARK: Router -
 /// Home Module Router Protocol
 protocol HomeRouterProtocol: AnyObject {
-    ///Optional
-//    func navigateToHome(from context: AnyObject?)
     func goToHome(email: String)
     func goToLogin()
+    func presentError(from context: AnyObject?, with title: String?, message: String?)
 }

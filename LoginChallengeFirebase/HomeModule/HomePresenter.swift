@@ -32,12 +32,8 @@ class HomePresenter: HomePresenterProtocol {
         view?.refresh(name: email)
     }
     
-    func observeData() {
-        interactor?.observeData()
-    }
-    
-    func updateView(with name: String) {
-        view?.refresh(name: name)
+    func logoutFailed(with title: String?, error message: String?) {
+        router?.presentError(from: view, with: title, message: message)
     }
     
 }

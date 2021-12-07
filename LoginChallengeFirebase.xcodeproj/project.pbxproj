@@ -194,12 +194,12 @@
 		ECF3BB1F275C10C50067936A /* LoginChallengeFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				EC39C05A275DA2540087FACE /* Constants */,
-				EC39C051275D87B00087FACE /* Model */,
-				EC39C044275D86DB0087FACE /* RegisterModule */,
 				ECF3BBB5275C50C40067936A /* MainWireframe */,
 				ECF3BBA6275C4B0A0067936A /* LoginModule */,
+				EC39C044275D86DB0087FACE /* RegisterModule */,
 				ECF3BB4B275C323C0067936A /* HomeModule */,
+				EC39C05A275DA2540087FACE /* Constants */,
+				EC39C051275D87B00087FACE /* Model */,
 				EC5914E9275D64A20004F63D /* GenericError */,
 				ECF3BBA2275C480C0067936A /* Utilities */,
 				ECF3BB20275C10C50067936A /* AppDelegate.swift */,
